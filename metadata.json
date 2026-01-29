@@ -1,0 +1,16 @@
+
+{
+  "name": "SummitTrack Wear",
+  "description": "A mountaineering and off-road hiking app designed for wearables, featuring real-time GPS path tracking, breadcrumb trails, and topographic map views.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ],
+  "androidPermissions": [
+    "android.permission.ACCESS_FINE_LOCATION",
+    "android.permission.ACCESS_COARSE_LOCATION",
+    "android.permission.ACCESS_BACKGROUND_LOCATION",
+    "android.permission.INTERNET"
+  ]
+}
