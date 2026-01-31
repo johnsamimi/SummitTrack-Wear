@@ -27,7 +27,6 @@
         justify-content: center;
         align-items: center;
       }
-      /* In APK/Native mode, the frame is hidden to use 100% of the screen */
       .watch-frame {
         width: 100vw;
         height: 100vh;
@@ -35,7 +34,6 @@
         overflow: hidden;
         background: #000;
       }
-      /* Only show the simulator border on desktop browsers */
       @media (min-width: 1024px) {
         .watch-frame {
           width: 450px;
@@ -61,26 +59,27 @@
         box-shadow: inset 0 0 100px rgba(0,0,0,1);
         z-index: 1000;
       }
-      /* Specific optimization for round screens */
       @media (max-width: 500px) {
         .stats-container {
-          padding-top: 15% !important;
+          padding-top: 18% !important;
         }
         .controls-container {
-          padding-bottom: 15% !important;
+          padding-bottom: 18% !important;
         }
       }
     </style>
   <script type="importmap">
 {
   "imports": {
-    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
-    "react/": "https://esm.sh/react@^19.2.4/",
-    "react": "https://esm.sh/react@^19.2.4",
+    "react": "https://esm.sh/react@18.3.1",
+    "react-dom": "https://esm.sh/react-dom@18.3.1",
+    "react-dom/client": "https://esm.sh/react-dom@18.3.1/client",
+    "lucide-react": "https://esm.sh/lucide-react@0.454.0",
+    "@google/genai": "https://esm.sh/@google/genai@1.38.0",
     "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
-    "@capacitor/cli": "https://esm.sh/@capacitor/cli@^8.0.2",
+    "react/": "https://esm.sh/react@^19.2.4/",
     "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2",
+    "@capacitor/cli": "https://esm.sh/@capacitor/cli@^8.0.2",
     "vite": "https://esm.sh/vite@^7.3.1"
   }
 }
