@@ -97,7 +97,7 @@ const App: React.FC = () => {
 
   // AI Logic - Gemini Mountain Guide
   const fetchMountainGuideAdvice = async () => {
-    const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+    const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
     const prompt = `
       I am currently hiking. 
       Distance traveled: ${state.distance.toFixed(0)} meters.
